@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>我的购物车</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header id="header">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a class="unfinished" href="#">品牌</a></li>
+                    <li><a class="unfinished" href="#">设计师</a></li>
+                    <li><a class="unfinished" href="#">联系我们</a></li>
+                </ul>
+            </header>
+            <div class="cart-list">
+                <table id="cartTable">
+                    <thead>
+                        <tr>
+                            <th>
+                                <label>
+                                    <input type="checkbox" id="selectAllProduct" /> 全选
+                                </label>
+                            </th>
+                            <th>商品</th>
+                            <th>单价（￥）</th>
+                            <th>数量</th>
+                            <th>小计（￥）</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td><input type="checkbox" name="productCheck" /></td>
+                            <td class="cart-product-name">
+                                <img src="./img/1.jpg" alt="No Image" />
+                                <span>针织衫</span>
+                            </td>
+                            <td class="cart-product-price">100</td>
+                            <td class="cart-product-count">
+                                <span class="reduce">-</span>
+                                <input class="count-input" type="text" value="1" />
+                                <span class="add">+</span>
+                            </td>
+                            <td class="cart-product-subtotal">100</td>
+                            <td class="cart-product-operation">
+                                <span class="delete">删除</span>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
+
+                <footer class="cart-footer" id="cartFooter">
+                    <a href="#" class="fl delete-all-product" id="deleteAllProduct">删除所有商品</a>
+                    <div class="fr closing">结 算</div>
+                    <div class="fr total">合计：￥ <span id="selectedTotalAmount">0.00</span></div>
+                    <div class="fr selected" id="selected">
+                        已选商品
+                        <span id="selectedTotalCount">0</span> 件
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="./plugins/jquery-3.4.1.min.js"></script>
+
+        <script type="text/javascript" src="./js/cart.js"></script>
+    </body>
+</html>
